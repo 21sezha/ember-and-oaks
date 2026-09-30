@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Oaks Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <header class="navbar">
+        <a href="#home" class="logo">Ember & Oaks</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav> 
+        <a href="" class="btn-reserve">Reserve</a> 
+    </header>
+
+    <!-- HERO SECTION -->
+     <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Ember & Oaks</h1>
+            <p>Fire-grilled classics and bold African flavors, served by candlelight.</p>
+
+            <div class="hero-buttons">
+                <a href="" class="btn-gold">View Menu</a>
+                <a href="" class="btn-outline">Reserve a Table</a>
+            </div>
+        </div>
+     </section>
+
+     <section class="about" id="about">
+        <div class="about-image">
+            <img src="images/chef.jpeg" alt="The Chef at Ember & Oaks">
+        </div>
+
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>At Ember & Oak, every dish starts over an open flame. Our chefs blend the bold spices of West Africa with the craft of fine dining, from smoky suya to perfectly seared steak. Come for the food, stay for the atmosphere.</p>
+            <img src="images/ingredients.jpeg" alt="Fresh spices, herbs and peppers" class="about-ingredients">
+        </div>
+     </section>
+
+     <!-- MENU -->
+   <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="tabs">
+        <button class="tab-active" data-category="starters">Starters</button>
+        <button class="tab" data-category="mains">Mains</button>
+        <button class="tab" data-category="desserts">Desserts</button>
+        <button class="tab" data-category="drinks">Drinks</button>
+    </div>
+    
+    <div class="menu-grid">
+        <article class="dish" data-category="starters">
+            <img src="images/spring roll.jpeg" alt="Crispy Spring rolls with sweet chili dip.">
+            <div class="dish-info">
+                <div class="dish-top">
+                    <h3>Crispy Spring Rolls</h3>
+                    <span class="price">₦4,500</span>
+                </div>
+                <p> Golden rolls filled with vegetables, served with sweet chili dip. </p>
+            </div>
+        </article>
+
+        <article class="dish" data-category="starters">
+            <img src="images/suya.jpeg" alt="Charcoal grilled suya skewers">
+            <div class="dish-info">
+                <div class="dish-top">
+                    <h3>Signature Suya</h3>
+                    <span class="price">₦6,000</span>
+                </div>
+                <p>Charcoal-grilled beef skewers in yaji spice, with onions and peanut sauce.</p>
+            </div>
+        </article>
+
+        <article class="dish" data-category="starters">
+            <img src="images/plantain.jpeg" alt="Caramelized fried plantain">
+            <div class="dish-info">
+                <div class="dish-top">
+                    <h3>Golden Dodo</h3>
+                    <span class="price">₦3,500</span>
+                </div>
+                <p> Caramelized fried plantain with a hint of herbs.</p>
+            </div>
+        </article>
+    </div>
+   </section>
+
+     <script src="script.js"></script>
+</body>
+</html>
