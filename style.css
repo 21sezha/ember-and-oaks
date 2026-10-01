@@ -16,6 +16,19 @@ body {
     color: #f5f0e6;
 }
 
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button,
+.btn-reserve,
+.btn-gold,
+.btn-outline {
+    font-family: "poppins", sans-serif;
+}
+
 h1, h2, h3 {
     font-family: "playfair display";
 }
