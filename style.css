@@ -244,7 +244,7 @@ img {
     color: #c9a24d;
 }
 
-.tab-active  {
+.tab.active  {
     background: #c9a24d;
     border-color: #c9a24d;
     color: #0d0d0d;

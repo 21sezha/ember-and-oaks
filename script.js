@@ -1,9 +1,9 @@
 const tabs =
 document.querySelectorAll(".tab");
 const dishes =
-document.querySelectorAll(".dish")
+document.querySelectorAll(".dish");
 
-function showcategory(category) {
+function showCategory(category) {
     dishes.forEach(function (dish) {
         if (dish.dataset.category === category) {
             dish.style.display = "block";
@@ -13,13 +13,13 @@ function showcategory(category) {
     }); 
 }
 
-tabs.foreach(function (tab) {
-    tab.addeventlistener("click", function () {
-        tabs.foreach(function (t) {
-            t.classlist.remove("active");
+tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+        tabs.forEach(function (t) {
+            t.classList.remove("active");
         });
-        tab.classlist.add("active");
-        showcategory(tab.dataset.category);
+        tab.classList.add("active");
+        showCategory(tab.dataset.category);
     });
 });
-showcategory("starters");
+showCategory("starters");
