@@ -23,3 +23,24 @@ tabs.forEach(function (tab) {
     });
 });
 showCategory("starters");
+
+const bookBtn =
+document.getElementById("book-btn");
+const reserveForm =
+document.getElementById("reserve-form");
+const thankYou =
+document.getElementById("thank-you");
+const guestName =
+document.getElementById("guest-name");
+const guestNameText =
+document.getElementById("guest-name-text");
+
+bookBtn.addEventListener("click", function(){
+    if (guestName.value === ""){
+        alert("Please enter your name");
+        return;
+    }
+    guestNameText.textContent = guestName.value;
+    reserveForm.style.display = "none";
+    thankYou.style.display = "block";
+});
