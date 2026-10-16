@@ -24,16 +24,11 @@ tabs.forEach(function (tab) {
 });
 showCategory("starters");
 
-const bookBtn =
-document.getElementById("book-btn");
-const reserveForm =
-document.getElementById("reserve-form");
-const thankYou =
-document.getElementById("thank-you");
-const guestName =
-document.getElementById("guest-name");
-const guestNameText =
-document.getElementById("guest-name-text");
+const bookBtn = document.getElementById("book-btn");
+const reserveForm = document.getElementById("reserve-form");
+const thankYou = document.getElementById("thank-you");
+const guestName = document.getElementById("guest-name");
+const guestNameText = document.getElementById("guest-name-text");
 
 bookBtn.addEventListener("click", function(){
     if (guestName.value === ""){
@@ -43,4 +38,17 @@ bookBtn.addEventListener("click", function(){
     guestNameText.textContent = guestName.value;
     reserveForm.style.display = "none";
     thankYou.style.display = "block";
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", function (){
+    navMenu.classList.toggle("open");
+});
+
+navMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navMenu.classList.remove("open");
+    });
 });
