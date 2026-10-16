@@ -75,10 +75,15 @@ nav a:hover {
 .btn-reserve {
     background-color: #c9a24d;
     color: #0d0d0d;
-    padding: 10px 24px;
+    padding: 10px 18px;
     border-radius: 8px;
     font-weight: 500;
     transition: background-color 0.3s;
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 .btn-reserve:hover {
@@ -489,7 +494,7 @@ img {
     }
 
     .btn-reserve {
-        padding: 8px 14px;
+        padding: 8px 16px;
         font-size: 0.9rem;
     }
 }
